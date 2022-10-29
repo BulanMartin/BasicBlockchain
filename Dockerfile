@@ -13,6 +13,6 @@ RUN pip install -v -r requirements.txt
 
 COPY ./src /src
 
-EXPOSE 8000
+EXPOSE 5000
 
-CMD ["python", "blockchain.py"]
+CMD ["python", "server.py"]

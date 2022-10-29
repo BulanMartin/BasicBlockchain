@@ -1,8 +1,12 @@
 version: '3.8'
+
 services:
   blockchain:
+    container_name: "blockchain-container"
     build: ./
     ports:
-      - 8000:8000
+      - 5000:5000
     volumes:
       - ./src:/src
+    stdin_open: true
+    tty: true
